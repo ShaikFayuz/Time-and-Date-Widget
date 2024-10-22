@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: auto;
+    display: grid;
+    color: #ffffff;
+    align-items: center;
+    grid-template-columns: 8fr 4fr;
+    background-color: #1e90ff;
+    border-radius: 0.5em;
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+.clock-container {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 3.75cm;
+    margin-left: 0.2cm;
+    border-radius: 0.1cm;
+    padding: 0.2cm 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-container span {
+    display: inline;
+}
+
+.hours {
+    color: #ff0000;
+}
+
+.minutes {
+    color: #00ff00;
+}
+
+.seconds {
+    color: #0000ff;
+}
+
+@keyframes neon-glow {
+    0% {
+        box-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+    }
+    100% {
+        box-shadow: 0 0 20px #fff, 0 0 30px #1e90ff, 0 0 40px #1e90ff, 0 0 50px #1e90ff;
+    }
+}
+
+.date-container {
+    padding: 10px;
+    background-color: #2784e0;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.date-container span {
+    font-size: 2.5cm;
+}
